@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #ffffff;
+}
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1f41a9;
+}
+.container-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-form h1 {
+  font-size: 48px;
+  line-height: 62.11px;
+  margin: 0;
+}
+.container-form p {
+  font-size: 18px;
+  line-height: 23.29px;
+  margin-bottom: 49px;
+}
+.ellipse-first {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ellipse-second {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.vector {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+input {
+  width: 353px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+}
+.input-border {
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  padding: 11px 17px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.input-border:first-of-type {
+  margin-bottom: 21px;
+}
+.input-border:last-of-type {
+  margin-bottom: 53px;
+}
+input::placeholder {
+  color: #ffffff;
+  font-size: 19px;
+  line-height: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+input:focus{
+  border: 0px;
+  outline: none;
+}
+.error-warning {
+  width: 370px;
+  padding: 15px;
+  margin: 5px 0;
+  font-size: 14px;
+  background-color: #f34646;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+  width: 433px;
+  color: #00ff29;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid #00ff29;
+  padding-top: 11px;
+  padding-bottom: 12px;
+  font-size: 19px;
+  line-height: 24.59px;
+  z-index: 1;
+}
+button:hover {
+  background-color: #00ff29;
+  color: #1f41a9;
+}
+
+/* Responsive design */
+@media (max-width: 950px) {
+  .ellipse-first,
+  .ellipse-second,
+  .vector {
+    display: none;
+  }
+  input,
+  .login-btn {
+    width: 100%;
+  }
+}
